@@ -1,0 +1,54 @@
+# ==============================
+# Android Studio / IntelliJ IDEA
+# ==============================
+
+*.iml
+
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/deploymentTargetDropDown.xml
+.idea/usage.statistics.xml
+
+
+# ==============================
+# Gradle
+# ==============================
+
+.gradle/
+**/build/
+
+
+# ==============================
+# Local configuration
+# ==============================
+
+local.properties
+
+
+# ==============================
+# Android build
+# ==============================
+
+.externalNativeBuild/
+.cxx/
+captures/
+
+
+# ==============================
+# Generated files
+# ==============================
+
+*.apk
+*.aab
+
+
+# ==============================
+# OS generated files
+# ==============================
+
+.DS_Store
+Thumbs.db
