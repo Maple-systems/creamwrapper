@@ -15,6 +15,7 @@ class MyService : Service() {
             Log.d("AIDL_TEST", "Service PID = ${Process.myPid()}")
         }
 
+
         override fun getMessage(): String {
             Log.d("AIDL_TEST", "Service 正在返回消息")
             return "Hello Activity，我是 Service"
