@@ -7,42 +7,44 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/black"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
             android:orientation="vertical">
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button2"
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:layout_width="match_parent"
+                android:id="@+id/vp2"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="OFF"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-           android:background="@color/w"
-            android:layout_margin="10dp"
-            android:layout_weight="10"
-            android:gravity="center"
-            android:orientation="vertical">
+                app:srcCompat="@drawable/arrow_down" />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#E91E63"
-                android:text="CreamWrapper beta" />
+                android:text="向下滑动页面查看更多"
+                android:textColor="@color/black" />
         </LinearLayout>
+    </RelativeLayout>
 
-
-
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

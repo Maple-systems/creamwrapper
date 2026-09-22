@@ -4,10 +4,16 @@ plugins {
 
 android {
     namespace = "com.mal.creamwrapper"
+
     compileSdk {
         version = release(37) {
             minorApiLevel = 1
         }
+    }
+
+    buildFeatures {
+        viewBinding = true
+        aidl = true
     }
 
     defaultConfig {
@@ -27,6 +33,7 @@ android {
             }
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -34,12 +41,17 @@ android {
 }
 
 dependencies {
+    implementation(libs.lottie)
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.recyclerview)
+    implementation(libs.androidx.viewpager2)
     implementation(libs.material)
+
     testImplementation(libs.junit)
+
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
 }
