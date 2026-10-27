@@ -46,9 +46,12 @@ class MainActivity : AppCompatActivity() {
                         val pageTwo = rec.findViewHolderForAdapterPosition(1) as? PageAdapter.PageViewHolder.Two
 
                         //pageTwo?.binding?.textView?.text = "页面二已选中"
+                        /*
                         val intent = Intent(this@MainActivity, a::class.java)
                         intent.flags =Intent.FLAG_ACTIVITY_CLEAR_TOP
                         startActivity(intent)
+
+                         */
 
                     } else {
                         v.textView.setText("向下滑动页面查看更多")

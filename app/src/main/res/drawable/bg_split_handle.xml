@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 拖动块手柄：默认浅绿，按下/拖动时变深（需要在代码里 isPressed = true 触发） -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#347565" />
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#8FBDAE" />
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+
+</selector>

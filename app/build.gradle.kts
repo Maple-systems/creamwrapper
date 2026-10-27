@@ -1,3 +1,4 @@
+
 plugins {
     alias(libs.plugins.android.application)
 }
@@ -13,7 +14,6 @@ android {
 
     buildFeatures {
         viewBinding = true
-        aidl = true
     }
 
     defaultConfig {
@@ -23,7 +23,8 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner =
+            "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -54,4 +55,8 @@ dependencies {
 
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)
+
+    implementation("io.github.pangu-immortal:keeplive-framework:2.0.1")
+    implementation("org.bouncycastle:bcprov-jdk18on:1.86")
+
 }

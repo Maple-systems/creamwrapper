@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 放入 res/values/styles.xml 中 -->
+    <style name="Theme.PartialLock" parent="Theme.AppCompat.NoActionBar">
+        <!-- 关键1:声明这个窗口要显示系统壁纸,而不是黑色 -->
+        <item name="android:windowShowWallpaper">true</item>
+
+        <!-- 关键2:窗口整体透明,内容区域由布局自己控制,而不是靠 Dialog 风格的浮动窗口 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+
+        <!-- 关键3:去掉窗口进出场动画,避免动画过程中出现黑色过渡帧 -->
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <!-- 注意:不要再加 windowIsFloating,这里改为全屏窗口 + 局部可见内容 -->
+    </style>
+
+    <!--
+    AndroidManifest.xml 中声明:
+
+    <activity
+        android:name=".PartialLockScreenActivity"
+        android:theme="@style/Theme.PartialLock"
+        android:excludeFromRecents="true"
+        android:launchMode="singleInstance" />
+    -->
+</resources>

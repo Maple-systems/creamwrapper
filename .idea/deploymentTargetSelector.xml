@@ -4,7 +4,7 @@
     <selectionStates>
       <SelectionState runConfigName="app">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2026-08-23T14:41:03.030496400Z">
+        <DropdownSelection timestamp="2026-10-10T12:12:13.314280800Z">
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\User\.android\avd\Galaxy_Nexus.avd" />
@@ -15,7 +15,7 @@
       </SelectionState>
       <SelectionState runConfigName="test">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2026-08-23T14:41:03.030496400Z">
+        <DropdownSelection timestamp="2026-10-27T14:40:47.154208600Z">
           <Target type="DEFAULT_BOOT">
             <handle>
               <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\User\.android\avd\Galaxy_Nexus.avd" />
@@ -24,12 +24,12 @@
         </DropdownSelection>
         <DialogSelection />
       </SelectionState>
-      <SelectionState runConfigName="a">
+      <SelectionState runConfigName="么">
         <option name="selectionMode" value="DROPDOWN" />
-        <DropdownSelection timestamp="2026-09-14T10:24:06.570633500Z">
+        <DropdownSelection timestamp="2026-10-21T13:56:44.552330400Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="PhysicalDevice" identifier="serial=ZY32MB5HKD" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\User\.android\avd\Galaxy_Nexus.avd" />
             </handle>
           </Target>
         </DropdownSelection>

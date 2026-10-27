@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bg_neumorphic_card">
+
+    <!-- 主标题：固定，不滚动 -->
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sew"
+        android:textColor="#263D38"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- 中间内容：可滚动 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="6dp"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 副标题 -->
+            <TextView
+                android:id="@+id/dialogSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eshy"
+                android:textColor="#6B817B"
+                android:textSize="14sp" />
+
+            <!-- 警告文字 -->
+            <TextView
+                android:id="@+id/dialogWarning"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/fesd"
+                android:textColor="#B66A54"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <!-- 正文 -->
+            <TextView
+                android:id="@+id/dialogMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/ege"
+                android:textColor="#405952"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- 按钮区域：固定，不滚动 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialogClose"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="我已清楚知晓"
+            android:textColor="#527069"
+            android:textSize="15sp"
+            android:background="@drawable/bg_dialog_button" />
+
+    </LinearLayout>
+
+</LinearLayout>

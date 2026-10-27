@@ -2,12 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DCEFE7"
-    tools:context=".test">
+    android:background="#DCEFE7">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -52,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="#C6DCD2"
+                    android:background="#C6DCD2"
                 android:padding="4dp">
 
                 <LinearLayout
@@ -85,7 +83,7 @@
                                 android:id="@+id/button"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="主动防御"
+                                android:text="系统默认防御"
                                 android:textColor="#244B40"
                                 android:textSize="16sp"
                                 android:textStyle="bold" />
@@ -95,18 +93,16 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="4dp"
-                                android:text="销毁、加密数据"
+                                android:text="推荐配置"
                                 android:textColor="#6B8C81"
                                 android:textSize="13sp" />
 
                         </LinearLayout>
 
-                        <TextView
+                        <ImageButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="›"
-                            android:textColor="#6B8C81"
-                            android:textSize="28sp" />
+                            android:background="@drawable/arrow_left"></ImageButton>
 
                     </LinearLayout>
 
